@@ -1,5 +1,5 @@
 import css from "./Hero.module.css";
-import heroLittleLemon2 from "../../../assets/heroLittleLemon2.png";
+import heroLittleLemon from "../../../assets/HeroLittleLemon2.png";
 import { Link } from "react-router-dom";
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <img className={css.imgHero} src={heroLittleLemon2} alt="food" />
+      <img className={css.imgHero} src={heroLittleLemon} alt="food" />
     </section>
   );
 };
