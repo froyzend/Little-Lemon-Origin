@@ -1,14 +1,14 @@
 import css from "./Header.module.css";
-
+import vector from "../../assets/Vector.png";
 import NavLinks from "./NavLink/NavLinks.jsx";
 
 const Header = () => {
   return (
     <header>
       <div className={css.containerHeader}>
-        <p className={css.logo}>
-          Little <span className={css.logoSpan}>Lemon</span>
-        </p>
+        <div className={css.logoContainer}>
+          <img className={css.logo} src={vector} alt="logo" />
+        </div>
         <NavLinks />
       </div>
     </header>

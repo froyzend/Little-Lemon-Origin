@@ -8,6 +8,9 @@ const NavLinks = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li className={css.item}>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li className={css.item}>
         <NavLink to="/menu">Menu</NavLink>
       </li>
       <li className={css.item}>

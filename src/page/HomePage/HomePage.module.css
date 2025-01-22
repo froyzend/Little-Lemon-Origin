@@ -1,3 +1,5 @@
 .background {
-    background-image: url('../../assets/heroDesktop.png');
+    /*
+    background-image: url('../../assets/heroDesktop.png');*/
+    background-color: rgb(46 67 47);
 }

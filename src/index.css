@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
 
+
+
 body {
-    background-color: black;
+    background-color: rgb(222, 219, 219);
     color: aliceblue;
 }

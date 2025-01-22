@@ -1,0 +1,22 @@
+.HeroGeneral {
+    padding: 180px 65px;
+    background-image: url("../../assets/food.webp");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.heroGeneral__title {
+    font-family: "Jua",
+        sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 20px;
+
+    color: #fefefe;
+    padding: 16px 26px;
+    background-color: rgb(46 67 47);
+}

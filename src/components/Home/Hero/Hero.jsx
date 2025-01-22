@@ -1,4 +1,6 @@
 import css from "./Hero.module.css";
+import heroLittleLemon2 from "../../../assets/heroLittleLemon2.png";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className={css.hero}>
@@ -12,15 +14,14 @@ const Hero = () => {
           inspired by the vibrant and refreshing essence of lemons – a symbol of
           brightness and zest.
         </p>
+
+        <div className={css.btnContainer}>
+          <button className={css.btn} type="button">
+            <Link to="/reserve">Reserve a Table</Link>
+          </button>
+        </div>
       </div>
-      <div className={css.btnContainer}>
-        <button className={css.btn} type="button">
-          Book a Table
-        </button>
-        <button className={css.btn} type="button">
-          Order Now
-        </button>
-      </div>
+      <img className={css.imgHero} src={heroLittleLemon2} alt="food" />
     </section>
   );
 };

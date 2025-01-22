@@ -1,11 +1,14 @@
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import HeroGeneral from "../../components/HeroGeneral/HeroGeneral.jsx";
 
 const LoginPage = () => {
   return (
     <div>
       <Header />
-      <h1>Login Page</h1>
+      <main>
+        <HeroGeneral />
+      </main>
       <Footer />
     </div>
   );
