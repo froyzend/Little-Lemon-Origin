@@ -3,7 +3,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import { Link } from "react-router-dom";
 import styles from "./WeekSpecials.module.css";
 import salade from "../../../assets/food/greek-salad.webp";
 import saladeGreek from "../../../assets/saladeGreek.png";
@@ -76,7 +76,9 @@ const WeekSpecials = () => {
               <h3 className={styles.subtitle}>{special.name}</h3>
               <p className={styles.price}>{special.price}</p>
               <p className={styles.description}>{special.description}</p>
-              <button className={styles.button}>Order for Delivery</button>
+              <button className={styles.button}>
+                <Link to="/order">Order for Delivery</Link>
+              </button>
             </div>
           </SwiperSlide>
         ))}
