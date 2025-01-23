@@ -22,7 +22,6 @@ const ReservationForm = () => {
   });
 
   const handleOrder = () => {
-    // Логика обработки данных
     console.log("Order confirmed:", formData);
     setModalOpen(false);
   };

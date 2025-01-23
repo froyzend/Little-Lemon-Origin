@@ -6,7 +6,7 @@ import onlineOrder from "../../../assets/onlineOrder.png";
 const Services = () => {
   return (
     <section className={css.services}>
-      <div className={css.container}>
+      <div className={css.view}>
         <h2 className={css.title}>Our Services</h2>
         <div className={css.cards}>
           <div className={css.card}>

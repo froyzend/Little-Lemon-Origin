@@ -1,19 +1,28 @@
-.navList {
-    display: flex;
-    gap: 25px;
+@media screen and (min-width: 320px) {
+    .navList {
+        display: none;
+    }
+
 }
 
-.item {
-    font-family: "Jua",
-        sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    color: #333;
-    padding: 20px 24px;
-    transition: all 0.3s ease-in-out;
-}
+@media screen and (min-width:1280px) {
+    .navList {
+        display: flex;
+        gap: 25px;
+    }
 
-.item:hover {
-    background-color: rgba(200, 227, 20, 0.57);
-    border-radius: 10px;
+    .item {
+        font-family: "Jua",
+            sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        color: #333;
+        padding: 20px 24px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .item:hover {
+        background-color: rgba(200, 227, 20, 0.57);
+        border-radius: 10px;
+    }
 }

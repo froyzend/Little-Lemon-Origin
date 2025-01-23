@@ -51,13 +51,11 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     padding: 40px;
     color: #333;
-    max-width: 500px;
-    width: 90%;
     animation: fadeIn 400ms ease-out forwards;
 }
 
 .styledBackdrop {
-    position: fixed;
+
     inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;

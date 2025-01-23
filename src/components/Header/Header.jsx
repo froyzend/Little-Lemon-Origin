@@ -1,6 +1,7 @@
 import css from "./Header.module.css";
 import vector from "../../assets/Vector.png";
 import NavLinks from "./NavLink/NavLinks.jsx";
+import BurgerMenu from "./MobMenu/BurgerMenu.jsx";
 
 const Header = () => {
   return (
@@ -10,6 +11,9 @@ const Header = () => {
           <img className={css.logo} src={vector} alt="logo" />
         </div>
         <NavLinks />
+        <div className={css.burgerMenu}>
+          <BurgerMenu />
+        </div>
       </div>
     </header>
   );

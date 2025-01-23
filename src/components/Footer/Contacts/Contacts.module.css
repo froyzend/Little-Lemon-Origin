@@ -1,4 +1,4 @@
-.subtitleColumn {
+/*.subtitleColumn {
     font-family: "Jua",
         sans-serif;
     font-weight: 400;
@@ -24,4 +24,41 @@
 
 .item:hover {
     color: rgb(211, 32, 32);
+}
+*/
+@media screen and (min-width: 320px) {
+
+
+    .listContact {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subtitleColumn {
+        font-family: "Jua", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        font-family: "Jua", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #fff;
+        transition: color 0.3ms ease-in-out;
+    }
+
+    .item:hover {
+        color: rgb(24, 154, 55);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts {
+        text-align: left;
+    }
 }

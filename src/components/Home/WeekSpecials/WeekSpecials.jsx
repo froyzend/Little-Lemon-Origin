@@ -55,34 +55,36 @@ const WeekSpecials = () => {
 
   return (
     <section className={styles.weekSpecials}>
-      <h2 className={styles.title}>This Week&apos;s Specials</h2>
-      <p className={styles.subtitleBtn}>Online Menu</p>
-      <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={20}
-        slidesPerView={3}
-        navigation
-        pagination={{ clickable: true }}
-        loop
-      >
-        {specials.map((special) => (
-          <SwiperSlide key={special.id}>
-            <div className={styles.card}>
-              <img
-                src={special.image}
-                alt={special.name}
-                className={styles.image}
-              />
-              <h3 className={styles.subtitle}>{special.name}</h3>
-              <p className={styles.price}>{special.price}</p>
-              <p className={styles.description}>{special.description}</p>
-              <button className={styles.button}>
-                <Link to="/order">Order for Delivery</Link>
-              </button>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={styles.view}>
+        <h2 className={styles.title}>This Week&apos;s Specials</h2>
+        <p className={styles.subtitleBtn}>Online Menu</p>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          loop
+        >
+          {specials.map((special) => (
+            <SwiperSlide key={special.id}>
+              <div className={styles.card}>
+                <img
+                  src={special.image}
+                  alt={special.name}
+                  className={styles.image}
+                />
+                <h3 className={styles.subtitle}>{special.name}</h3>
+                <p className={styles.price}>{special.price}</p>
+                <p className={styles.description}>{special.description}</p>
+                <button className={styles.button}>
+                  <Link to="/order">Order for Delivery</Link>
+                </button>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };
